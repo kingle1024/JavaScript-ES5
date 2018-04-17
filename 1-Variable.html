@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>variable</title>
+    <title>Variable</title>
 </head>
 <body>
      <!-- 변수?
       변수는 변할 수 있는 값으로 컴퓨터 메모리에 존재하며 실행 도중 변경될 수 있다.
-      자바 스크립트에서는 var 예약어를 사용해서 변수를 선언할 수 있다.
+      자바스크립트에서는 var 예약어를 사용해서 변수를 선언할 수 있다.
      -->
     <script>
-        var variable = 1; // 숫자형 변수 선언
+        var variable = 1; // 변수(variable)에 1 대입
         var nothing;      // undefined (선언만 하고 값을 할당하지 않은 상태)
         var nll = null;   // null (아무것도 없음을 나타내기 위한 특수 객체)
 
@@ -20,21 +20,26 @@
         console.log('-----------------------------------------------------');
 
         // 변수에 할당된 값은 언제든 변경할 수 있어요!
+        variable = false;
+        console.log(variable);
         variable = 5;
         console.log(variable);
         variable = 'JS STUDY';
         console.log(variable);
-        variable = false;
-        console.log(variable);
-        console.log('-----------------------------------------------------');
+
+
+        // [자바스크립트 변수 규칙]
+        // 1. 변수 이름은 문자, 밑줄(_), 달러 기호($)로 시작해야 하고, 그 뒤에는 숫자(0~9)도 올 수 있다.
+        // 2. 대소문자를 구별한다.
+        // 3. 자바스크립트에서 정한 예약어는 사용할 수 없다.
 
         // var 선언으로 모든 자료형을 담을 수 있어요!
+        variable = false;
+        console.log(typeof variable, '-> 참/거짓');
         variable = 5;
         console.log(typeof variable, '-> 숫자');
         variable = 'JS STUDY';
         console.log(typeof variable, '-> 문자열');
-        variable = false;
-        console.log(typeof variable, '-> 참/거짓');
     </script>
 </body>
 </html>
