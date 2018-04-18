@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>LogicalOperator</title>
+</head>
+<body>
+    <!-- 논리 연산자?
+     논리 비교를 통해 논리 값이나 피연산자를 반환하는 연산자로,
+     피연산자가 숫자나 문자일 경우 각각 0과 공백을 제외하고 true 취급한다.
+    -->
+    <script>
+        var boolean = false;
+        
+
+        // OR:
+        console.log(boolean || true);
+        console.log(boolean || false);
+        console.log(true || false);
+        console.log(0 || '');
+        console.log('' || '');
+        console.log('-----------------------------------------------------');
+
+        // AND:
+        console.log(boolean && true);
+        console.log(boolean && false);
+        console.log(true && true);
+    </script>
+</body>
+</html>
