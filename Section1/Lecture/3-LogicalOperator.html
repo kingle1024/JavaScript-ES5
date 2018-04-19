@@ -19,15 +19,16 @@
         console.log(!10, !'JS');
         console.log('-----------------------------------------------------');
 
-        // OR:
+        // OR: 참인 값이 먼저 나오면 그 피연산자를, 없을 시 마지막 피연산자를 반환
         console.log(boolean || true);
         console.log(boolean || false);
-        console.log(true || false);
+        console.log(boolean || true || false);
         console.log(0 || '');
-        console.log('' || '');
+        console.log(10 || '');
+        console.log('' || 'JS' || 0);
         console.log('-----------------------------------------------------');
 
-        // AND:
+        // AND: 피
         console.log(boolean && true);
         console.log(boolean && false);
         console.log(true && true);
