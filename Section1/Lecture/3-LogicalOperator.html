@@ -28,10 +28,13 @@
         console.log('' || 'JS' || 0);
         console.log('-----------------------------------------------------');
 
-        // AND: 피
+        // AND: 거짓인 값이 먼저 나오면 그 피연산자를, 없을 시 마지막 피연산자를 반환
         console.log(boolean && true);
         console.log(boolean && false);
-        console.log(true && true);
+        console.log('' && 0);
+        console.log('JS' && false);
+        console.log(10 && 100 && 1000);
+        console.log('JS' && 0 && false);
     </script>
 </body>
 </html>
