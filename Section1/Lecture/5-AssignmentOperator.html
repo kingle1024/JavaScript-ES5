@@ -9,14 +9,20 @@
     -->
     <script>
         // 대입 연산자
-        var number = 10;
+        var number = 10,
+            string = 'JS'
+        ;
 
         /* 복합 대입 연산자 */
-        console.log(number += 10);  // number = number + 10;
-        console.log(number -= 10);  // number = number - 10;
-        console.log(number *= 10);  // number = number * 10;
-        console.log(number /= 10);  // number = number / 10;
-        console.log(number %= 10);  // number = number % 10;
+        console.log('number = number + 10; =>', number += 10);
+        console.log('number = number - 10; =>', number -= 10);
+        console.log('number = number * 10; =>', number *= 10);
+        console.log('number = number / 10; =>', number /= 10);
+        console.log('number = number % 10; =>', number %= 10);
+        console.log('number = number + true; =>', number += true);
+        console.log('number = number - false; =>', number -= false);
+        console.log('string = string + "-"; =>', string += '-');
+        console.log('string = string + "Study"; =>', string += 'Study');
     </script>
 </body>
 </html>
