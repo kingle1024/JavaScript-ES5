@@ -12,13 +12,10 @@
         var number = 10,
             string = '10'
         ;
-
         // ==: 피연산자들의 값이 같으면 참을 반환하는 연산자
         console.log('[10 == 10] =>', number == number);
         console.log('[10 == 20] =>', number == 20);
         console.log('[10 == "10"] =>', number == string);
-        console.log('-----------------------------------------------------');
-
         // !=: 피연산자들의 값이 다르면 참을 반환하는 연산자
         console.log('[10 != 10] =>', number != number);
         console.log('[10 != 20] =>', number != 20);
@@ -28,12 +25,25 @@
         // ===: 피연산자들의 값과 자료형이 같으면 참을 반환하는 연산자
         console.log('[10 === 10] =>', number === number);
         console.log('[10 === "10"] =>', number === string);
-        console.log('-----------------------------------------------------');
-
         // !==: 피연산자들의 값 혹은 자료형이 다르면 참을 반환하는 연산자
         console.log('[10 !== 10] =>', number !== number);
         console.log('[10 !== "10"] =>', number !== string);
         console.log('-----------------------------------------------------');
+
+        /* 대소 비교 연산자 */
+        console.log('[10 < 10] =>', 10 < number);
+        console.log('[15 > 10] =>', 15 > number);
+        console.log('[10 <= 10] =>', 10 <= number);
+        console.log('[5 >= 10] =>', 5 >= number);
+        console.log('-----------------------------------------------------');
+        // 참은 1, 거짓은 0으로 치환
+        console.log('[false < 0] =>', false < 0);
+        console.log('[true > 0] =>', true > 0);
+        // 자음/모음 순서가 느릴수록 값이 크다!!
+        console.log('["ㄱ" < "ㅁ"] =>', 'ㄱ' < 'ㅁ');
+        console.log('["김" > "님"] =>', '감' > '님');
+        console.log('["ㅎ" <= "ㅏ"] =>', 'ㅎ' <= 'ㅏ');
+        console.log('["난" >= "한"] =>', '난' >= '한');
     </script>
 </body>
 </html>
