@@ -9,7 +9,21 @@
      여러 변수들이 나열된 자료구조이며 대응하는 번호(index)를 가진다.
     -->
     <script>
-        var array = [];
+        var array = [true, 1000, 'JS'];
+
+        /* 0부터 시작하는 번호(index)로 데이터에 접근 */
+        console.log('array[0] =>', array[0]);
+        console.log('array[1] =>', array[1]);
+        console.log('array[2] =>', array[2]);
+        console.log('-----------------------------------------------------');
+
+        /* 숫자가 담긴 변수를 활용한 접근 */
+        var index = 0;
+        console.log('array[index] =>', array[index]);
+        console.log('array[index++] =>', array[index++]);
+        console.log('array[++index] =>', array[++index]);
+        console.log('array[--index] =>', array[--index]);
+        console.log('array[index--] =>', array[index--]);
     </script>
 </body>
 </html>
